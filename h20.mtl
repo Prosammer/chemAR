@@ -1,0 +1,41 @@
+# Created by Jmol 14.32.75  2022-09-15 20:35
+
+newmtl k1ff01f
+ Ns 163
+ Ni 0.001
+ illum 2
+ Ka 0.20 0.20 0.20
+ Kd .125 .941 .125
+ Ks 0.25 0.25 0.25
+
+newmtl kff0d0d
+ Ns 163
+ Ni 0.001
+ illum 2
+ Ka 0.20 0.20 0.20
+ Kd 1 .055 .055
+ Ks 0.25 0.25 0.25
+
+newmtl k3050f8
+ Ns 163
+ Ni 0.001
+ illum 2
+ Ka 0.20 0.20 0.20
+ Kd .191 .316 .973
+ Ks 0.25 0.25 0.25
+
+newmtl k909090
+ Ns 163
+ Ni 0.001
+ illum 2
+ Ka 0.20 0.20 0.20
+ Kd .566 .566 .566
+ Ks 0.25 0.25 0.25
+
+newmtl kffffff
+ Ns 163
+ Ni 0.001
+ illum 2
+ Ka 0.20 0.20 0.20
+ Kd 1 1 1
+ Ks 0.25 0.25 0.25

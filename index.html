@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <!-- we import arjs version without NFT but with marker + location based support -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+
+    <body style="margin : 0px; overflow: hidden;">
+        <a-scene
+                embedded
+                arjs
+                renderer="logarithmicDepthBuffer: true;"
+                vr-mode-ui="enabled: false"
+                gesture-detector
+                id="scene"
+        >
+        <a-assets>
+            <a-asset-item id="h20" src="h20.obj"></a-asset-item>
+            <a-asset-item id="h20-mtl" src="h20.mtl"></a-asset-item>
+        </a-assets>
+        <a-marker
+                preset="hiro"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+
+        >
+            <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
+              <a-entity
+                      position="0 0 0"
+                      scale="0.1 0.1 0.1"
+                      obj-model="obj: #h20; mtl: #h20-mtl"
+                      class="clickable"
+                      gesture-handler
+              ></a-entity>
+        </a-marker>
+        <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
